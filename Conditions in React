@@ -1,0 +1,71 @@
+import React from "react";
+
+const App = () => {
+  return (
+    <>
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+    </>
+  );
+};
+
+const returnGenre = () => {
+  const genre = "RomCom";
+  return genre;
+};
+let age = 19;
+
+export const NetflixSeries = () => {
+  const name = "Alice in Borderland";
+  const rating = "9.0";
+  const summary =
+    "An aimless gamer and his two friends find themselves in a parallel Tokyo, where they're forced to compete in a series of sadistic games to survive.";
+
+  //METHOD 1
+  //  if(age<18){
+  //   return (
+  //     <div>
+  //     <div>
+  //       <img src="Alice.avif" alt="" width="40%" height="40%" />
+  //     </div>
+  //     <h2>Name: {name}</h2>
+  //     <h3>Rating: {rating}</h3>
+  //     <p>Summary:{summary}</p>
+  //     <p>Genre: {returnGenre()}</p>
+  //     <button>Not Available</button>
+  //   </div>
+  // )
+  //  }
+
+  //MEHTOD 3
+  // let canWatch = "Not Available";
+  // if (age >= 18) canWatch = "Watch Now";
+
+// METHOD 4
+const canWatch =() =>{
+  if(age>=18) return "Watch Now";
+  return "Not Available";
+}  
+
+
+  return (
+    <div>
+      <div>
+        <img src="Alice.avif" alt="" width="40%" height="40%" />
+      </div>
+      <h2>Name: {name}</h2>
+      <h3>Rating: {rating}</h3>
+      <p>Summary: {summary}</p>
+      <p>Genre: {returnGenre()}</p>
+      {/*<button>{age >= 18 ? "Watch Now" : "Not Available"}</button>{" "}*/}
+      {/*METHOD 2*/}
+      {/* <button>{canWatch}</button>  METHOD 3 */}
+      <button>{canWatch()}</button>
+    </div>
+  );
+};
+
+export default App;
