@@ -1,0 +1,28 @@
+import React from "react";
+
+const App = () => {
+  return (
+    <>
+      <NetflixSeries/>
+      <NetflixSeries/>
+      <NetflixSeries/>
+      <NetflixSeries/>
+      <NetflixSeries/>
+  </>
+  );
+};
+
+export const NetflixSeries =() =>{
+  return(
+    <div>
+      <div>
+        <img src="Alice.avif" alt="" width="40%" height="40%" />
+      </div>
+      <h2>Name: Alice in Borderland</h2>
+      <h3>Rating: 9.0</h3>
+      <p>Summary:An aimless gamer and his two friends find themselves in a parallel Tokyo, where they're forced to compete in a series of sadistic games to survive.</p>
+    </div>
+  )
+}
+
+export default App;
