@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Sweet Home 3",
+      "rating": 8.5,
+      "summary": "A horror series about survival in a monster-infested world.",
+      "genre": ["Horror", "Drama"],
+      "cast": ["Song Kang", "Lee Jin-wook", "Lee Si-young"],
+      "img_url": "public/image/img1 (1).jpg",
+      "watch_url": "https://example.com/watch1"
+    },
+    {
+      "id": 2,
+      "name": "Sweet Home",
+      "rating": 8.4,
+      "summary": "The story of a high school student who faces monstrous threats.",
+      "genre": ["Action", "Thriller"],
+      "cast": ["Song Kang", "Lee Jin-wook"],
+      "img_url": "public/image/img1 (2).jpg",
+      "watch_url": "https://example.com/watch2"
+    },
+    {
+      "id": 3,
+      "name": "King the Land",
+      "rating": 7.9,
+      "summary": "A romantic comedy set in a hotel.",
+      "genre": ["Romance", "Comedy"],
+      "cast": ["Lee Junho", "Lim Yoona"],
+      "img_url": "public/image/img1 (3).jpg",
+      "watch_url": "https://example.com/watch3"
+    },
+    {
+      "id": 4,
+      "name": "Wednesday Season 2",
+      "rating": 9.0,
+      "summary": "The adventures of Wednesday Addams at Nevermore Academy.",
+      "genre": ["Fantasy", "Comedy"],
+      "cast": ["Jenna Ortega", "Catherine Zeta-Jones"],
+      "img_url": "public/image/img1 (4).jpg",
+      "watch_url": "https://example.com/watch4"
+    },
+    {
+      "id": 5,
+      "name": "Squid Game",
+      "rating": 9.3,
+      "summary": "Contestants compete in deadly games for a cash prize.",
+      "genre": ["Thriller", "Drama"],
+      "cast": ["Lee Jung-jae", "Park Hae-soo"],
+      "img_url": "public/image/img1 (5).jpg",
+      "watch_url": "https://example.com/watch5"
+    },
+    {
+      "id": 6,
+      "name": "The Witcher",
+      "rating": 8.2,
+      "summary": "The story of Geralt of Rivia, a monster hunter.",
+      "genre": ["Fantasy", "Adventure"],
+      "cast": ["Henry Cavill", "Freya Allan"],
+      "img_url": "public/image/img1 (6).jpg",
+      "watch_url": "https://example.com/watch6"
+    }
+  ]
+  
