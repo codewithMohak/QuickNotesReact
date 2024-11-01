@@ -1,0 +1,36 @@
+function Profile() {
+    return (
+      <div>
+        <h1>Profile Card Challenge</h1>
+        <ProfileCard
+          name="Mohak Agarwal"
+          age={20}
+          occupation="Student"
+          greeting={
+            <div>
+              <strong>Hello, my name is Mohak Agarwal</strong>
+            </div>
+          }
+        >
+        <p>Hobbies: Coding, Exploring the World</p>
+        <button>Contact</button>
+        </ProfileCard>
+      </div>
+    );
+  }
+  
+  function ProfileCard(props) {
+    const {name,age,occupation,greeting,children}=props;
+    return (
+      <>
+        <h2>Name: {name}</h2>
+        <p>Age: {age}</p>
+        <p>Occupation: {occupation}</p>
+        <p>{greeting}</p>
+        <div>{children}</div>
+      </>
+    );
+  }
+  
+  export default Profile;
+  
