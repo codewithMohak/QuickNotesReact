@@ -1,0 +1,28 @@
+const SeriesCard = (props) => {
+  // console.log(props);
+
+  const { img_url, name, rating, summary, cast, genre, watch_url } =
+    props.curElem;
+  const ratingClass = rating >= 8.5 ? "super_hit" : "average";
+  return (
+    <li className="card">
+      <div>
+        <img src={img_url} alt={name} width="40%" height="40%" />
+        <div className="card-container">
+          <h2>Name: {name}</h2>
+          <h3>
+            Rating:
+            <span className={`rating ${ratingClass}`}>{rating}</span>
+          </h3>
+          <p>Summary: {summary}</p>
+          <p>Genre: {genre.join(",")}</p>
+          <p>Cast: {cast.join(",")}</p>
+          <a href={watch_url} target="_blank">
+            <button>Watch Now</button>
+          </a>
+        </div>
+      </div>
+    </li>
+  );
+};
+export default SeriesCard;
